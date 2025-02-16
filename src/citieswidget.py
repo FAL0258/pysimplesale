@@ -1,7 +1,7 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import uic, QtWidgets, QtCore
-from PyQt5.QtSql import QSqlQueryModel, QSqlTableModel
-from PyQt5.QtWidgets import QHeaderView
+from PyQt6 import uic, QtWidgets, QtCore
+from PyQt6.QtSql import QSqlQueryModel, QSqlTableModel
+from PyQt6.QtWidgets import QHeaderView
 from src.citywidget import CityWidget
 
 
@@ -35,12 +35,12 @@ class CitiesWidget(QtWidgets.QWidget):
         headerNum = 0
         for header in headers:
             self.cityModel.setHeaderData(headerNum,
-                                         QtCore.Qt.Horizontal,
+                                         QtCore.Qt.Orientation.Horizontal,
                                          header)
             headerNum = headerNum + 1
 
         self.updateTable()
-        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
+        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
         self.tableView.hideColumn(2)
 
     def setState(self):

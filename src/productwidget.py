@@ -1,11 +1,11 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import QtWidgets, uic, QtCore
-from PyQt5.QtWidgets import QMessageBox
-from PyQt5.QtCore import pyqtSignal
+from PyQt6 import QtWidgets, uic, QtCore
+from PyQt6.QtWidgets import QMessageBox
+from PyQt6.QtCore import pyqtSignal
 from src.dao.productdao import ProductDAO
 from src.dao.unitdao import UnitDAO
 from src.entity.product import Product
-from PyQt5.QtSql import QSqlTableModel
+from PyQt6.QtSql import QSqlTableModel
 from src.unitwidget import UnitWidget
 
 

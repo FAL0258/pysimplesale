@@ -1,8 +1,8 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import uic, QtWidgets
+from PyQt6 import uic, QtWidgets
 from src.entity.unit import Unit
 from src.dao.unitdao import UnitDAO
-from PyQt5.QtCore import pyqtSignal
+from PyQt6.QtCore import pyqtSignal
 
 
 class UnitWidget(QtWidgets.QWidget):

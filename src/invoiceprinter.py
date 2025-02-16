@@ -1,8 +1,8 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5.QtPrintSupport import QPrinter, QPrintDialog
-from PyQt5.QtGui import QPainter, QPixmap
-from PyQt5.QtWidgets import QDialog
-from PyQt5.QtCore import QPoint, QSettings
+from PyQt6.QtPrintSupport import QPrinter, QPrintDialog
+from PyQt6.QtGui import QPainter, QPixmap
+from PyQt6.QtWidgets import QDialog
+from PyQt6.QtCore import QPoint, QSettings
 from src.dao.customerdao import CustomerDAO
 from src.dao.citydao import CityDAO
 from src.dao.statedao import StateDAO

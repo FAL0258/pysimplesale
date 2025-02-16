@@ -1,5 +1,5 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import QtWidgets
+from PyQt6 import QtWidgets
 
 
 class NotEditableDelegate(QtWidgets.QStyledItemDelegate):

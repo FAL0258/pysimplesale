@@ -1,9 +1,9 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import QtCore, uic, QtWidgets
-from PyQt5.QtCore import QDateTime, pyqtSignal
-from PyQt5.QtWidgets import QCompleter, QHeaderView, QStyledItemDelegate
-from PyQt5.QtSql import QSqlTableModel
-from PyQt5.QtGui import QStandardItemModel, QStandardItem
+from PyQt6 import QtCore, uic, QtWidgets
+from PyQt6.QtCore import QDateTime, pyqtSignal
+from PyQt6.QtWidgets import QCompleter, QHeaderView, QStyledItemDelegate
+from PyQt6.QtSql import QSqlTableModel
+from PyQt6.QtGui import QStandardItemModel, QStandardItem
 from src.dao.saledao import SaleDAO
 from src.dao.saleproductdao import SaleProductDAO
 from src.dao.productdao import ProductDAO
@@ -104,7 +104,7 @@ class SaleWidget(QtWidgets.QWidget):
         self.updateTotalAmount()
 
         self.dateTimeEdit.setDateTime(QDateTime.fromString(sale.datetime, 'yyyy-MM-dd HH:mm:ss'))
-        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
+        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
         self.tableView.hideColumn(5)
         self.tableView.hideColumn(6)
 
@@ -217,7 +217,7 @@ class SaleWidget(QtWidgets.QWidget):
         self.quantityLineEdit.setText("1")
         self.productLineEdit.clear()
         self.productLineEdit.setFocus()
-        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
+        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
         self.tableView.hideColumn(5)
         self.tableView.hideColumn(6)
         self.updateTotalAmount()

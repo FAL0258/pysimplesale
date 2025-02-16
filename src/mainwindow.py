@@ -1,9 +1,9 @@
 # This Python file uses the following encoding: utf-8
 
-from PyQt5.QtWidgets import QMainWindow, QMenu, QHeaderView, QMessageBox
-from PyQt5 import uic, QtCore
-from PyQt5.QtCore import QDate
-from PyQt5.QtSql import QSqlTableModel
+from PyQt6.QtWidgets import QMainWindow, QMenu, QHeaderView, QMessageBox
+from PyQt6 import uic, QtCore
+from PyQt6.QtCore import QDate
+from PyQt6.QtSql import QSqlTableModel
 from src.productwidget import ProductWidget
 from src.sqlconnection import SqlConnection
 from src.dao.customerdao import CustomerDAO
@@ -220,7 +220,7 @@ class MainWindow(QMainWindow):
         headerNum = 0
         for header in headers:
             self.tableModel.setHeaderData(headerNum,
-                                          QtCore.Qt.Horizontal,
+                                          QtCore.Qt.Orientation.Horizontal,
                                           header)
             headerNum = headerNum + 1
 
@@ -230,7 +230,7 @@ class MainWindow(QMainWindow):
         for column in columnsToShow:
             self.tableView.showColumn(column)
 
-        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
+        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
         self.tableView.verticalScrollBar().setValue(scrollValue)
 
     def openReports(self):

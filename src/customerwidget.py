@@ -1,8 +1,8 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import uic, QtCore
-from PyQt5.QtWidgets import QWidget, QMessageBox
-from PyQt5.QtSql import QSqlTableModel
-from PyQt5.QtCore import pyqtSignal
+from PyQt6 import uic, QtCore
+from PyQt6.QtWidgets import QWidget, QMessageBox
+from PyQt6.QtSql import QSqlTableModel
+from PyQt6.QtCore import pyqtSignal
 from src.entity.customer import Customer
 from src.dao.customerdao import CustomerDAO
 from src.dao.statedao import StateDAO

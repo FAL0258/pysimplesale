@@ -1,8 +1,8 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import uic
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QHeaderView
-from PyQt5.QtSql import QSqlQueryModel
+from PyQt6 import uic
+from PyQt6 import QtWidgets
+from PyQt6.QtWidgets import QHeaderView
+from PyQt6.QtSql import QSqlQueryModel
 
 
 class ReportsWidget(QtWidgets.QWidget):
@@ -21,4 +21,4 @@ class ReportsWidget(QtWidgets.QWidget):
             self.tableModel.setQuery("SELECT SUBSTR(datetime, 1, 4) AS Year, "
             "SUM(amount) AS Total FROM sale GROUP BY 1")
         self.tableView.setModel(self.tableModel)
-        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
+        self.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)

@@ -1,7 +1,7 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import uic, QtWidgets
-from PyQt5.QtCore import QSettings
-from PyQt5.QtWidgets import QFileDialog
+from PyQt6 import uic, QtWidgets
+from PyQt6.QtCore import QSettings
+from PyQt6.QtWidgets import QFileDialog
 
 
 class SettingsWidget(QtWidgets.QWidget):

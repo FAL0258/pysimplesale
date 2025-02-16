@@ -1,7 +1,7 @@
 # This Python file uses the following encoding: utf-8
 from src.mainwindow import MainWindow
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtGui import QIcon
+from PyQt6.QtWidgets import QApplication
+from PyQt6.QtGui import QIcon
 import sys
 
 if __name__ == "__main__":

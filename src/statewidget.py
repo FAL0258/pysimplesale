@@ -1,9 +1,9 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import QtWidgets, uic, QtCore
+from PyQt6 import QtWidgets, uic, QtCore
 from src.entity.state import State
 from src.dao.statedao import StateDAO
-from PyQt5.QtSql import QSqlTableModel
-from PyQt5.QtCore import pyqtSignal
+from PyQt6.QtSql import QSqlTableModel
+from PyQt6.QtCore import pyqtSignal
 
 
 class StateWidget(QtWidgets.QWidget):

@@ -1,6 +1,6 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import QtCore
-from PyQt5.QtSql import QSqlDatabase, QSqlQuery
+from PyQt6 import QtCore
+from PyQt6.QtSql import QSqlDatabase, QSqlQuery
 
 
 class SqlConnection(QtCore.QObject):

@@ -1,10 +1,10 @@
 # This Python file uses the following encoding: utf-8
-from PyQt5 import QtWidgets, QtCore, uic
-from PyQt5.QtCore import pyqtSignal
+from PyQt6 import QtWidgets, QtCore, uic
+from PyQt6.QtCore import pyqtSignal
 from src.dao.supplierdao import SupplierDAO
 from src.dao.statedao import StateDAO
 from src.dao.citydao import CityDAO
-from PyQt5.QtSql import QSqlTableModel
+from PyQt6.QtSql import QSqlTableModel
 from src.entity.supplier import Supplier
 
 
